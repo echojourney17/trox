@@ -1055,7 +1055,7 @@
 				CODE_SIGN_ENTITLEMENTS = "trox-vpn/trox-vpn.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K3CFA8U38L;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "trox-vpn/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Trox;
@@ -1090,7 +1090,7 @@
 				CODE_SIGN_ENTITLEMENTS = "trox-vpn/trox-vpn.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K3CFA8U38L;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "trox-vpn/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Trox;
