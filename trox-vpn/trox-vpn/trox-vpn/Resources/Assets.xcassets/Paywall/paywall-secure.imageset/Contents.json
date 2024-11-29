@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "carbon_wifi-secure.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

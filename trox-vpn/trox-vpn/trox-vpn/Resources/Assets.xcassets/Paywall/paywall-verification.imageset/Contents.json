@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fi-sr-incognito.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
