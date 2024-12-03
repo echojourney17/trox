@@ -31,12 +31,24 @@ class SettingsPresenter: NSObject {
                     storageService: self.storageService,
                     type: .multy
                 )
+            case .restorePurchases:
+                self.restore()
             case .support:
                 self.view?.openMail(Constants.Support.email)
             case .privacy:
                 self.view?.openURL(string: Constants.Support.policy)
             case .terms:
                 self.view?.openURL(string: Constants.Support.terms)
+        }
+    }
+    
+    private func restore() {
+        self.view?.startLoading()
+        self.storeService.restore { [weak self] in
+            DispatchQueue.main.async {
+                self?.view?.stopLoading()
+                self?.view?.showAlert(message: "Restore successfull", completion: nil)
+            }
         }
     }
     

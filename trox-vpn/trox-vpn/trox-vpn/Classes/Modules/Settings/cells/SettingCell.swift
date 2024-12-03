@@ -9,6 +9,7 @@ import UIKit
 
 enum SettingItem: CaseIterable {
     case subscription
+    case restorePurchases
     case support
     case privacy
     case terms
@@ -17,6 +18,8 @@ enum SettingItem: CaseIterable {
         switch self {
             case .subscription:
                 return "Manage Subscription"
+            case .restorePurchases:
+                return "Restore purchases"
             case .support:
                 return "Help & Support"
             case .privacy:

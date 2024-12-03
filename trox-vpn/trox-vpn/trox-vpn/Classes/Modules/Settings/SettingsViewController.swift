@@ -8,7 +8,7 @@
 import UIKit
 import MessageUI
 
-protocol SettingsView: AnyObject, Paylable {
+protocol SettingsView: AnyObject, Paylable, Loadable, Alertable {
     var presenter: SettingsPresenterInterface? { get set }
     
     func openURL(string: String)

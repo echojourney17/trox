@@ -62,6 +62,7 @@ protocol StoreServiceInterface {
     
     func load(completion: Completion?)
     func pay(productId: String, completion: ((String?) -> Void)?)
+    func restore(completion: Completion?)
 }
 
 final class StoreService {
@@ -191,6 +192,18 @@ final class StoreService {
                 purchasedProductIDs.insert(transaction.productID)
             } else {
                 purchasedProductIDs.remove(transaction.productID)
+            }
+        }
+    }
+    
+    func restore(completion: Completion?) {
+        Task {
+            do {
+                try await AppStore.sync()
+                completion?()
+            } catch {
+                completion?()
+                print(error)
             }
         }
     }
