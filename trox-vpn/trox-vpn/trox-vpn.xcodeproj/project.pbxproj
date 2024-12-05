@@ -21,6 +21,41 @@
 		1152D2502CF4164D00C2899C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152D24F2CF4164D00C2899C /* LocationCell.swift */; };
 		1152D2532CF44A6000C2899C /* CheckNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152D2522CF44A6000C2899C /* CheckNetworkView.swift */; };
 		1152D2562CF476ED00C2899C /* VPNStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152D2552CF476ED00C2899C /* VPNStatusView.swift */; };
+		115847902D01A24B00DAF2A0 /* FunnelCheckYouPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158477A2D01A24B00DAF2A0 /* FunnelCheckYouPhoneView.swift */; };
+		115847912D01A24B00DAF2A0 /* Extension+Skarb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158477D2D01A24B00DAF2A0 /* Extension+Skarb.swift */; };
+		115847922D01A24B00DAF2A0 /* FunnelFlowCheckPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158477F2D01A24B00DAF2A0 /* FunnelFlowCheckPhoneViewController.swift */; };
+		115847932D01A24B00DAF2A0 /* FunnelFlowScanPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847802D01A24B00DAF2A0 /* FunnelFlowScanPhoneViewController.swift */; };
+		115847942D01A24B00DAF2A0 /* FunnelCheckingYourPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847822D01A24B00DAF2A0 /* FunnelCheckingYourPhoneView.swift */; };
+		115847952D01A24B00DAF2A0 /* FunnelFlowScanPhoneRiskCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847832D01A24B00DAF2A0 /* FunnelFlowScanPhoneRiskCategoryView.swift */; };
+		115847962D01A24B00DAF2A0 /* FunnelFlowScanPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847842D01A24B00DAF2A0 /* FunnelFlowScanPhoneView.swift */; };
+		115847972D01A24B00DAF2A0 /* FunnelFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847862D01A24B00DAF2A0 /* FunnelFlowPresenter.swift */; };
+		115847982D01A24B00DAF2A0 /* FunnelFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847872D01A24B00DAF2A0 /* FunnelFlowView.swift */; };
+		115847992D01A24B00DAF2A0 /* FunnelLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847892D01A24B00DAF2A0 /* FunnelLoaderViewController.swift */; };
+		1158479A2D01A24B00DAF2A0 /* AnalyticValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158478B2D01A24B00DAF2A0 /* AnalyticValues.swift */; };
+		1158479B2D01A24B00DAF2A0 /* Funnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158478C2D01A24B00DAF2A0 /* Funnel.swift */; };
+		1158479C2D01A24B00DAF2A0 /* FunnelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158478D2D01A24B00DAF2A0 /* FunnelCoordinator.swift */; };
+		1158479D2D01A24B00DAF2A0 /* SubscribeEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158478E2D01A24B00DAF2A0 /* SubscribeEventRequest.swift */; };
+		115847A02D01A34F00DAF2A0 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1158479F2D01A34F00DAF2A0 /* JGProgressHUD */; };
+		115847A32D01A3A700DAF2A0 /* ScreenshotPreventing in Frameworks */ = {isa = PBXBuildFile; productRef = 115847A22D01A3A700DAF2A0 /* ScreenshotPreventing */; };
+		115847A62D01A3EE00DAF2A0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 115847A52D01A3EE00DAF2A0 /* Lottie */; };
+		115847A92D01A40C00DAF2A0 /* BranchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 115847A82D01A40C00DAF2A0 /* BranchSDK */; };
+		115847AB2D01A54D00DAF2A0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 115847AA2D01A54D00DAF2A0 /* FirebaseAnalytics */; };
+		115847AE2D01A6B400DAF2A0 /* AnalyticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115847AD2D01A6B400DAF2A0 /* AnalyticService.swift */; };
+		115847B32D01A99D00DAF2A0 /* grow_offer.json in Resources */ = {isa = PBXBuildFile; fileRef = 115847AF2D01A99C00DAF2A0 /* grow_offer.json */; };
+		115847B42D01A99D00DAF2A0 /* Load.json in Resources */ = {isa = PBXBuildFile; fileRef = 115847B02D01A99C00DAF2A0 /* Load.json */; };
+		115847B52D01A99D00DAF2A0 /* scanning.json in Resources */ = {isa = PBXBuildFile; fileRef = 115847B12D01A99C00DAF2A0 /* scanning.json */; };
+		115847C32D01A9AF00DAF2A0 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847B62D01A9AF00DAF2A0 /* SFProText-Bold.ttf */; };
+		115847C42D01A9AF00DAF2A0 /* SFProText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847B72D01A9AF00DAF2A0 /* SFProText-BoldItalic.ttf */; };
+		115847C52D01A9AF00DAF2A0 /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847B82D01A9AF00DAF2A0 /* SFProText-Heavy.ttf */; };
+		115847C62D01A9AF00DAF2A0 /* SFProText-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847B92D01A9AF00DAF2A0 /* SFProText-HeavyItalic.ttf */; };
+		115847C72D01A9AF00DAF2A0 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847BA2D01A9AF00DAF2A0 /* SFProText-Light.ttf */; };
+		115847C82D01A9AF00DAF2A0 /* SFProText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847BB2D01A9AF00DAF2A0 /* SFProText-LightItalic.ttf */; };
+		115847C92D01A9AF00DAF2A0 /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847BC2D01A9AF00DAF2A0 /* SFProText-Medium.ttf */; };
+		115847CA2D01A9AF00DAF2A0 /* SFProText-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847BD2D01A9AF00DAF2A0 /* SFProText-MediumItalic.ttf */; };
+		115847CB2D01A9AF00DAF2A0 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847BE2D01A9AF00DAF2A0 /* SFProText-Regular.ttf */; };
+		115847CC2D01A9AF00DAF2A0 /* SFProText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847BF2D01A9AF00DAF2A0 /* SFProText-RegularItalic.ttf */; };
+		115847CD2D01A9AF00DAF2A0 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847C02D01A9AF00DAF2A0 /* SFProText-Semibold.ttf */; };
+		115847CE2D01A9AF00DAF2A0 /* SFProText-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 115847C12D01A9AF00DAF2A0 /* SFProText-SemiboldItalic.ttf */; };
 		11804E3F2CF5836C00DD4996 /* PowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11804E3E2CF5836C00DD4996 /* PowerView.swift */; };
 		11804E422CF5B3BD00DD4996 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11804E412CF5B3BD00DD4996 /* PrivacyViewController.swift */; };
 		11804E452CF5F7AE00DD4996 /* SpeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11804E442CF5F7AE00DD4996 /* SpeedService.swift */; };
@@ -133,6 +168,36 @@
 		1152D24F2CF4164D00C2899C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		1152D2522CF44A6000C2899C /* CheckNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNetworkView.swift; sourceTree = "<group>"; };
 		1152D2552CF476ED00C2899C /* VPNStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusView.swift; sourceTree = "<group>"; };
+		1158477A2D01A24B00DAF2A0 /* FunnelCheckYouPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCheckYouPhoneView.swift; sourceTree = "<group>"; };
+		1158477D2D01A24B00DAF2A0 /* Extension+Skarb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Skarb.swift"; sourceTree = "<group>"; };
+		1158477F2D01A24B00DAF2A0 /* FunnelFlowCheckPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowCheckPhoneViewController.swift; sourceTree = "<group>"; };
+		115847802D01A24B00DAF2A0 /* FunnelFlowScanPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneViewController.swift; sourceTree = "<group>"; };
+		115847822D01A24B00DAF2A0 /* FunnelCheckingYourPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCheckingYourPhoneView.swift; sourceTree = "<group>"; };
+		115847832D01A24B00DAF2A0 /* FunnelFlowScanPhoneRiskCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneRiskCategoryView.swift; sourceTree = "<group>"; };
+		115847842D01A24B00DAF2A0 /* FunnelFlowScanPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneView.swift; sourceTree = "<group>"; };
+		115847862D01A24B00DAF2A0 /* FunnelFlowPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowPresenter.swift; sourceTree = "<group>"; };
+		115847872D01A24B00DAF2A0 /* FunnelFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowView.swift; sourceTree = "<group>"; };
+		115847892D01A24B00DAF2A0 /* FunnelLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelLoaderViewController.swift; sourceTree = "<group>"; };
+		1158478B2D01A24B00DAF2A0 /* AnalyticValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticValues.swift; sourceTree = "<group>"; };
+		1158478C2D01A24B00DAF2A0 /* Funnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Funnel.swift; sourceTree = "<group>"; };
+		1158478D2D01A24B00DAF2A0 /* FunnelCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCoordinator.swift; sourceTree = "<group>"; };
+		1158478E2D01A24B00DAF2A0 /* SubscribeEventRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeEventRequest.swift; sourceTree = "<group>"; };
+		115847AD2D01A6B400DAF2A0 /* AnalyticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticService.swift; sourceTree = "<group>"; };
+		115847AF2D01A99C00DAF2A0 /* grow_offer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grow_offer.json; sourceTree = "<group>"; };
+		115847B02D01A99C00DAF2A0 /* Load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Load.json; sourceTree = "<group>"; };
+		115847B12D01A99C00DAF2A0 /* scanning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scanning.json; sourceTree = "<group>"; };
+		115847B62D01A9AF00DAF2A0 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		115847B72D01A9AF00DAF2A0 /* SFProText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		115847B82D01A9AF00DAF2A0 /* SFProText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Heavy.ttf"; sourceTree = "<group>"; };
+		115847B92D01A9AF00DAF2A0 /* SFProText-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		115847BA2D01A9AF00DAF2A0 /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		115847BB2D01A9AF00DAF2A0 /* SFProText-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-LightItalic.ttf"; sourceTree = "<group>"; };
+		115847BC2D01A9AF00DAF2A0 /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		115847BD2D01A9AF00DAF2A0 /* SFProText-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-MediumItalic.ttf"; sourceTree = "<group>"; };
+		115847BE2D01A9AF00DAF2A0 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		115847BF2D01A9AF00DAF2A0 /* SFProText-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-RegularItalic.ttf"; sourceTree = "<group>"; };
+		115847C02D01A9AF00DAF2A0 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		115847C12D01A9AF00DAF2A0 /* SFProText-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		11804E3E2CF5836C00DD4996 /* PowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerView.swift; sourceTree = "<group>"; };
 		11804E412CF5B3BD00DD4996 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		11804E442CF5F7AE00DD4996 /* SpeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedService.swift; sourceTree = "<group>"; };
@@ -232,9 +297,14 @@
 				11952B3B2CF183BC00400005 /* FirebaseRemoteConfig in Frameworks */,
 				11952B3E2CF185BB00400005 /* SkarbSDK in Frameworks */,
 				111D7F532CF32B79008EA7E5 /* StoreKit.framework in Frameworks */,
+				115847AB2D01A54D00DAF2A0 /* FirebaseAnalytics in Frameworks */,
 				11952B902CF1892F00400005 /* NVActivityIndicatorView in Frameworks */,
 				11952B392CF183BC00400005 /* FirebaseCore in Frameworks */,
+				115847A62D01A3EE00DAF2A0 /* Lottie in Frameworks */,
+				115847A32D01A3A700DAF2A0 /* ScreenshotPreventing in Frameworks */,
 				11F00B942CF05C4200C21098 /* Alamofire in Frameworks */,
+				115847A92D01A40C00DAF2A0 /* BranchSDK in Frameworks */,
+				115847A02D01A34F00DAF2A0 /* JGProgressHUD in Frameworks */,
 				11952B8A2CF1884300400005 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +390,120 @@
 			path = VPNStatusView;
 			sourceTree = "<group>";
 		};
+		1158477B2D01A24B00DAF2A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1158477A2D01A24B00DAF2A0 /* FunnelCheckYouPhoneView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1158477C2D01A24B00DAF2A0 /* CheckDevice */ = {
+			isa = PBXGroup;
+			children = (
+				1158477B2D01A24B00DAF2A0 /* Views */,
+			);
+			path = CheckDevice;
+			sourceTree = "<group>";
+		};
+		1158477E2D01A24B00DAF2A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1158477D2D01A24B00DAF2A0 /* Extension+Skarb.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		115847812D01A24B00DAF2A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1158477F2D01A24B00DAF2A0 /* FunnelFlowCheckPhoneViewController.swift */,
+				115847802D01A24B00DAF2A0 /* FunnelFlowScanPhoneViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		115847852D01A24B00DAF2A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				115847822D01A24B00DAF2A0 /* FunnelCheckingYourPhoneView.swift */,
+				115847832D01A24B00DAF2A0 /* FunnelFlowScanPhoneRiskCategoryView.swift */,
+				115847842D01A24B00DAF2A0 /* FunnelFlowScanPhoneView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		115847882D01A24B00DAF2A0 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				115847812D01A24B00DAF2A0 /* Controllers */,
+				115847852D01A24B00DAF2A0 /* Views */,
+				115847862D01A24B00DAF2A0 /* FunnelFlowPresenter.swift */,
+				115847872D01A24B00DAF2A0 /* FunnelFlowView.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		1158478A2D01A24B00DAF2A0 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				115847892D01A24B00DAF2A0 /* FunnelLoaderViewController.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		1158478F2D01A24B00DAF2A0 /* Funnel */ = {
+			isa = PBXGroup;
+			children = (
+				1158477C2D01A24B00DAF2A0 /* CheckDevice */,
+				1158477E2D01A24B00DAF2A0 /* Extensions */,
+				115847882D01A24B00DAF2A0 /* Flow */,
+				1158478A2D01A24B00DAF2A0 /* Loader */,
+				1158478B2D01A24B00DAF2A0 /* AnalyticValues.swift */,
+				1158478C2D01A24B00DAF2A0 /* Funnel.swift */,
+				1158478D2D01A24B00DAF2A0 /* FunnelCoordinator.swift */,
+				1158478E2D01A24B00DAF2A0 /* SubscribeEventRequest.swift */,
+			);
+			path = Funnel;
+			sourceTree = "<group>";
+		};
+		115847AC2D01A66E00DAF2A0 /* Analytic */ = {
+			isa = PBXGroup;
+			children = (
+				115847AD2D01A6B400DAF2A0 /* AnalyticService.swift */,
+			);
+			path = Analytic;
+			sourceTree = "<group>";
+		};
+		115847B22D01A99C00DAF2A0 /* Lottie Animation */ = {
+			isa = PBXGroup;
+			children = (
+				115847AF2D01A99C00DAF2A0 /* grow_offer.json */,
+				115847B02D01A99C00DAF2A0 /* Load.json */,
+				115847B12D01A99C00DAF2A0 /* scanning.json */,
+			);
+			path = "Lottie Animation";
+			sourceTree = "<group>";
+		};
+		115847C22D01A9AF00DAF2A0 /* SFProText */ = {
+			isa = PBXGroup;
+			children = (
+				115847B62D01A9AF00DAF2A0 /* SFProText-Bold.ttf */,
+				115847B72D01A9AF00DAF2A0 /* SFProText-BoldItalic.ttf */,
+				115847B82D01A9AF00DAF2A0 /* SFProText-Heavy.ttf */,
+				115847B92D01A9AF00DAF2A0 /* SFProText-HeavyItalic.ttf */,
+				115847BA2D01A9AF00DAF2A0 /* SFProText-Light.ttf */,
+				115847BB2D01A9AF00DAF2A0 /* SFProText-LightItalic.ttf */,
+				115847BC2D01A9AF00DAF2A0 /* SFProText-Medium.ttf */,
+				115847BD2D01A9AF00DAF2A0 /* SFProText-MediumItalic.ttf */,
+				115847BE2D01A9AF00DAF2A0 /* SFProText-Regular.ttf */,
+				115847BF2D01A9AF00DAF2A0 /* SFProText-RegularItalic.ttf */,
+				115847C02D01A9AF00DAF2A0 /* SFProText-Semibold.ttf */,
+				115847C12D01A9AF00DAF2A0 /* SFProText-SemiboldItalic.ttf */,
+			);
+			path = SFProText;
+			sourceTree = "<group>";
+		};
 		11804E3D2CF5835C00DD4996 /* PowerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +565,7 @@
 		11952B4A2CF186F700400005 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				115847C22D01A9AF00DAF2A0 /* SFProText */,
 				11952B632CF187DE00400005 /* Poppins */,
 			);
 			path = Fonts;
@@ -609,6 +794,7 @@
 		11F00B7B2CF0563700C21098 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				115847AC2D01A66E00DAF2A0 /* Analytic */,
 				11804E432CF5F7A300DD4996 /* Speed */,
 				11952B2A2CF1829700400005 /* VPN */,
 				11F00B8A2CF05B7C00C21098 /* Network */,
@@ -642,6 +828,7 @@
 		11F00B7E2CF0571400C21098 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1158478F2D01A24B00DAF2A0 /* Funnel */,
 				11804E402CF5B3AC00DD4996 /* Privacy */,
 				1152D2412CF403E500C2899C /* Locations */,
 				112E3F4F2CF1D36800C0A2A5 /* Data */,
@@ -659,6 +846,7 @@
 			isa = PBXGroup;
 			children = (
 				11952B4E2CF1870E00400005 /* Localizable */,
+				115847B22D01A99C00DAF2A0 /* Lottie Animation */,
 				11952B4B2CF186FE00400005 /* Generated */,
 				11952B4A2CF186F700400005 /* Fonts */,
 				11F00B6E2CF055D000C21098 /* Assets.xcassets */,
@@ -736,6 +924,11 @@
 				11952B892CF1884300400005 /* SnapKit */,
 				11952B8F2CF1892F00400005 /* NVActivityIndicatorView */,
 				11952B912CF1892F00400005 /* NVActivityIndicatorViewExtended */,
+				1158479F2D01A34F00DAF2A0 /* JGProgressHUD */,
+				115847A22D01A3A700DAF2A0 /* ScreenshotPreventing */,
+				115847A52D01A3EE00DAF2A0 /* Lottie */,
+				115847A82D01A40C00DAF2A0 /* BranchSDK */,
+				115847AA2D01A54D00DAF2A0 /* FirebaseAnalytics */,
 			);
 			productName = "trox-vpn";
 			productReference = 11F00B622CF055CE00C21098 /* trox-vpn.app */;
@@ -771,6 +964,10 @@
 				11952B3C2CF185BA00400005 /* XCRemoteSwiftPackageReference "SkarbSDK" */,
 				11952B882CF1884300400005 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				11952B8E2CF1892F00400005 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				1158479E2D01A34F00DAF2A0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				115847A12D01A3A700DAF2A0 /* XCRemoteSwiftPackageReference "ScreenshotPreventing" */,
+				115847A42D01A3ED00DAF2A0 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				115847A72D01A40C00DAF2A0 /* XCRemoteSwiftPackageReference "ios-branch-deep-linking" */,
 			);
 			productRefGroup = 11F00B632CF055CE00C21098 /* Products */;
 			projectDirPath = "";
@@ -787,25 +984,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				11952B6F2CF187DE00400005 /* Poppins-LightItalic.ttf in Resources */,
+				115847CB2D01A9AF00DAF2A0 /* SFProText-Regular.ttf in Resources */,
 				11952B6A2CF187DE00400005 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				115847B42D01A99D00DAF2A0 /* Load.json in Resources */,
+				115847C52D01A9AF00DAF2A0 /* SFProText-Heavy.ttf in Resources */,
+				115847C62D01A9AF00DAF2A0 /* SFProText-HeavyItalic.ttf in Resources */,
 				11952B642CF187DE00400005 /* OFL.txt in Resources */,
+				115847CC2D01A9AF00DAF2A0 /* SFProText-RegularItalic.ttf in Resources */,
 				11952B672CF187DE00400005 /* Poppins-Bold.ttf in Resources */,
 				11952B712CF187DE00400005 /* Poppins-MediumItalic.ttf in Resources */,
 				11952B6D2CF187DE00400005 /* Poppins-Italic.ttf in Resources */,
+				115847CD2D01A9AF00DAF2A0 /* SFProText-Semibold.ttf in Resources */,
+				115847C42D01A9AF00DAF2A0 /* SFProText-BoldItalic.ttf in Resources */,
 				11952B4F2CF1870E00400005 /* Localizable.strings in Resources */,
 				11F00B6F2CF055D000C21098 /* Assets.xcassets in Resources */,
 				11952B652CF187DE00400005 /* Poppins-Black.ttf in Resources */,
+				115847B52D01A99D00DAF2A0 /* scanning.json in Resources */,
+				115847B32D01A99D00DAF2A0 /* grow_offer.json in Resources */,
 				11952B762CF187DE00400005 /* Poppins-ThinItalic.ttf in Resources */,
 				11952B662CF187DE00400005 /* Poppins-BlackItalic.ttf in Resources */,
 				11F00B722CF055D000C21098 /* Base in Resources */,
 				11952B742CF187DE00400005 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				115847C82D01A9AF00DAF2A0 /* SFProText-LightItalic.ttf in Resources */,
 				11952B6C2CF187DE00400005 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				111D7F562CF3832D008EA7E5 /* GoogleService-Info.plist in Resources */,
+				115847CE2D01A9AF00DAF2A0 /* SFProText-SemiboldItalic.ttf in Resources */,
 				11952B692CF187DE00400005 /* Poppins-ExtraBold.ttf in Resources */,
 				11952B6E2CF187DE00400005 /* Poppins-Light.ttf in Resources */,
+				115847C32D01A9AF00DAF2A0 /* SFProText-Bold.ttf in Resources */,
 				11F00B6D2CF055CE00C21098 /* Base in Resources */,
 				11952B732CF187DE00400005 /* Poppins-SemiBold.ttf in Resources */,
 				11952B492CF186E200400005 /* swiftgen.yml in Resources */,
+				115847C72D01A9AF00DAF2A0 /* SFProText-Light.ttf in Resources */,
+				115847CA2D01A9AF00DAF2A0 /* SFProText-MediumItalic.ttf in Resources */,
+				115847C92D01A9AF00DAF2A0 /* SFProText-Medium.ttf in Resources */,
 				11952B702CF187DE00400005 /* Poppins-Medium.ttf in Resources */,
 				11952B752CF187DE00400005 /* Poppins-Thin.ttf in Resources */,
 				11952B682CF187DE00400005 /* Poppins-BoldItalic.ttf in Resources */,
@@ -824,6 +1036,7 @@
 				11952B832CF1881F00400005 /* Extension+NSAttributedString.swift in Sources */,
 				112E3F532CF1D36800C0A2A5 /* DataViewController.swift in Sources */,
 				11952BBD2CF18EF500400005 /* Environment.swift in Sources */,
+				115847912D01A24B00DAF2A0 /* Extension+Skarb.swift in Sources */,
 				11952B472CF1869800400005 /* OnboardViewController.swift in Sources */,
 				11F00B8C2CF05B8A00C21098 /* APINetworkService.swift in Sources */,
 				11F00B972CF05C6F00C21098 /* SplashPresenter.swift in Sources */,
@@ -839,6 +1052,7 @@
 				11952B822CF1881F00400005 /* Extension+Loadable.swift in Sources */,
 				11952BD72CF1C9F700400005 /* SettingsPresenter.swift in Sources */,
 				11952BB92CF18E1D00400005 /* MetaInfo.swift in Sources */,
+				1158479D2D01A24B00DAF2A0 /* SubscribeEventRequest.swift in Sources */,
 				112E3F512CF1D36800C0A2A5 /* DataComponents.swift in Sources */,
 				1152D24A2CF405F800C2899C /* CommonViewController.swift in Sources */,
 				1152D2562CF476ED00C2899C /* VPNStatusView.swift in Sources */,
@@ -849,6 +1063,9 @@
 				11952B802CF1881F00400005 /* Extension+Alertable.swift in Sources */,
 				11952BD52CF1C9F700400005 /* SettingCell.swift in Sources */,
 				11F00B832CF0582F00C21098 /* Coordinator.swift in Sources */,
+				115847922D01A24B00DAF2A0 /* FunnelFlowCheckPhoneViewController.swift in Sources */,
+				115847962D01A24B00DAF2A0 /* FunnelFlowScanPhoneView.swift in Sources */,
+				1158479A2D01A24B00DAF2A0 /* AnalyticValues.swift in Sources */,
 				11F00B912CF05C1A00C21098 /* BaseEndpoint.swift in Sources */,
 				11952B2C2CF1829700400005 /* KeychainItemAccessibility.swift in Sources */,
 				11952B812CF1881F00400005 /* Extension+Date.swift in Sources */,
@@ -859,12 +1076,15 @@
 				1152D2532CF44A6000C2899C /* CheckNetworkView.swift in Sources */,
 				11F00B812CF0579200C21098 /* AppCoordinator.swift in Sources */,
 				11952B9C2CF189AD00400005 /* PaywallPresenter.swift in Sources */,
+				1158479C2D01A24B00DAF2A0 /* FunnelCoordinator.swift in Sources */,
 				1152D2502CF4164D00C2899C /* LocationCell.swift in Sources */,
 				11952BA12CF18A2B00400005 /* Localizable.swift in Sources */,
 				1152D2432CF403F400C2899C /* LocationsViewController.swift in Sources */,
 				11F00B6A2CF055CE00C21098 /* ViewController.swift in Sources */,
 				11952B992CF189AD00400005 /* CommonPaywallViewController.swift in Sources */,
+				1158479B2D01A24B00DAF2A0 /* Funnel.swift in Sources */,
 				11F00B662CF055CE00C21098 /* AppDelegate.swift in Sources */,
+				115847902D01A24B00DAF2A0 /* FunnelCheckYouPhoneView.swift in Sources */,
 				11F00B892CF05A7600C21098 /* StoreService.swift in Sources */,
 				11952B2D2CF1829700400005 /* KeychainWrapper.swift in Sources */,
 				11952BC52CF1A45D00400005 /* TabItem.swift in Sources */,
@@ -873,7 +1093,9 @@
 				11952BA22CF18A2B00400005 /* Assets.swift in Sources */,
 				11952B862CF1881F00400005 /* Extension+UIColor.swift in Sources */,
 				112E3F502CF1D36800C0A2A5 /* DataCell.swift in Sources */,
+				115847982D01A24B00DAF2A0 /* FunnelFlowView.swift in Sources */,
 				11952BB62CF18CD700400005 /* PageControlView.swift in Sources */,
+				115847AE2D01A6B400DAF2A0 /* AnalyticService.swift in Sources */,
 				112E3F522CF1D36800C0A2A5 /* DataPresenter.swift in Sources */,
 				1152D24D2CF4124A00C2899C /* CountryView.swift in Sources */,
 				11952B842CF1881F00400005 /* Extension+Paylable.swift in Sources */,
@@ -882,18 +1104,23 @@
 				11952B872CF1881F00400005 /* Extension+UIView.swift in Sources */,
 				11952B9D2CF189AD00400005 /* SinglePaywallViewController.swift in Sources */,
 				1152D2452CF4040000C2899C /* LocationsComponents.swift in Sources */,
+				115847992D01A24B00DAF2A0 /* FunnelLoaderViewController.swift in Sources */,
 				11952B242CF1825600400005 /* Server.swift in Sources */,
 				11952B402CF1865400400005 /* OnboardingCoordinator.swift in Sources */,
 				11952BC22CF1A41000400005 /* TabNavigationController.swift in Sources */,
 				11952BBF2CF1A30400400005 /* TabCoordinator.swift in Sources */,
 				11952B452CF1869000400005 /* OnboardComponents.swift in Sources */,
+				115847952D01A24B00DAF2A0 /* FunnelFlowScanPhoneRiskCategoryView.swift in Sources */,
 				11952BCA2CF1A6BE00400005 /* VPNPresenter.swift in Sources */,
 				11804E452CF5F7AE00DD4996 /* SpeedService.swift in Sources */,
 				11804E3F2CF5836C00DD4996 /* PowerView.swift in Sources */,
 				11952B8D2CF188D500400005 /* OnboardCollectionViewCell.swift in Sources */,
 				11952BCC2CF1A6C900400005 /* VPNComponents.swift in Sources */,
+				115847972D01A24B00DAF2A0 /* FunnelFlowPresenter.swift in Sources */,
+				115847932D01A24B00DAF2A0 /* FunnelFlowScanPhoneViewController.swift in Sources */,
 				11952B332CF182CE00400005 /* StatusResponse.swift in Sources */,
 				11F00B992CF05C7800C21098 /* SplashViewController.swift in Sources */,
+				115847942D01A24B00DAF2A0 /* FunnelCheckingYourPhoneView.swift in Sources */,
 				11952B852CF1881F00400005 /* Extension+String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,7 +1281,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "trox-vpn/trox-vpn.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = K3CFA8U38L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "trox-vpn/Info.plist";
@@ -1069,7 +1296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sam.trox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1089,7 +1316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "trox-vpn/trox-vpn.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = K3CFA8U38L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "trox-vpn/Info.plist";
@@ -1104,7 +1331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sam.trox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1141,6 +1368,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1158479E2D01A34F00DAF2A0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		115847A12D01A3A700DAF2A0 /* XCRemoteSwiftPackageReference "ScreenshotPreventing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yoxisem544/ScreenshotPreventing.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		115847A42D01A3ED00DAF2A0 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		115847A72D01A40C00DAF2A0 /* XCRemoteSwiftPackageReference "ios-branch-deep-linking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BranchMetrics/ios-branch-deep-linking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.0;
+			};
+		};
 		11952B372CF183BC00400005 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1184,6 +1443,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1158479F2D01A34F00DAF2A0 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1158479E2D01A34F00DAF2A0 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		115847A22D01A3A700DAF2A0 /* ScreenshotPreventing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 115847A12D01A3A700DAF2A0 /* XCRemoteSwiftPackageReference "ScreenshotPreventing" */;
+			productName = ScreenshotPreventing;
+		};
+		115847A52D01A3EE00DAF2A0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 115847A42D01A3ED00DAF2A0 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		115847A82D01A40C00DAF2A0 /* BranchSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 115847A72D01A40C00DAF2A0 /* XCRemoteSwiftPackageReference "ios-branch-deep-linking" */;
+			productName = BranchSDK;
+		};
+		115847AA2D01A54D00DAF2A0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11952B372CF183BC00400005 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
 		11952B382CF183BC00400005 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 11952B372CF183BC00400005 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

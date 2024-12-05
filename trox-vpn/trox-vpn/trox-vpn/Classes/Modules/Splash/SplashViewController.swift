@@ -17,6 +17,12 @@ class SplashViewController: UIViewController {
 
     var presenter: SplashPresenterInterface?
     
+    private lazy var activityView: UIActivityIndicatorView = {
+        var view = UIActivityIndicatorView(style: .large)
+        view.startAnimating()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +32,10 @@ class SplashViewController: UIViewController {
     }
     
     private func setupUI() {
+        self.view.backgroundColor = .black
+    }
+    
+    private func organicSetupUI() {
         let backImageView = UIImageView(image: Asset.splashBackground.image)
         self.view.addSubview(backImageView)
         backImageView.snp.makeConstraints { make in
@@ -46,6 +56,18 @@ class SplashViewController: UIViewController {
             make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).inset(10)
             make.centerX.equalToSuperview()
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1500)) {
+            self.presenter?.viewDidFinish()
+        }
+    }
+    
+    private func funnelSetupUI() {
+        self.view.addSubview(self.activityView)
+        self.activityView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.size.equalTo(134)
+        }
     }
     
 
@@ -64,7 +86,12 @@ class SplashViewController: UIViewController {
 extension SplashViewController: SplashView {
     
     func updateUI(mode: SplashMode) {
-        //
+        switch mode {
+            case .organic:
+                self.organicSetupUI()
+            case .funnel:
+                self.funnelSetupUI()
+        }
     }
     
 }

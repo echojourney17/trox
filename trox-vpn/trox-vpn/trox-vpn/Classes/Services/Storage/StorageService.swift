@@ -8,9 +8,10 @@ protocol StorageServiceInterface {
     var currentLocationId: String? { get set }
     var servers: [Server]? { get set }
     var remoteRespone: RemoteResponse? { get set }
+    var isFunnelShowed: Bool { get set }
     var isRemoteLoaded: Bool { get set }
     
-    func loadRemoteKeys(completion: ((RemoteResponse?) -> Void)?)
+    func loadRemoteKeys(completion: Completion?)
 }
 
 class StorageService {
@@ -47,38 +48,58 @@ class StorageService {
             UserDefaults.standard.set(newValue, forKey: "isLastLaunch")
         }
     }
+    var isFunnelShowed: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: "isFunnelShowed")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "isFunnelShowed")
+        }
+    }
     var servers: [Server]?
     var remoteRespone: RemoteResponse?
     var isRemoteLoaded: Bool = false
     
-    func loadRemoteKeys(completion: ((RemoteResponse?) -> Void)?) {
+    func loadRemoteKeys(completion: Completion?) {
         let remoteConfig = RemoteConfig.remoteConfig()
         remoteConfig.fetch(withExpirationDuration: 0) { (status, error) in
             if status == .success {
                 remoteConfig.activate()
-
+                
+                let key1 = remoteConfig.configValue(forKey: "appkey1").stringValue
+                let key2 = remoteConfig.configValue(forKey: "appkey2").stringValue
                 let dismissDelay = remoteConfig.configValue(forKey: "dismissDelay").numberValue
                 
                 let decoder = JSONDecoder()
                 let languageCode = Locale.current.languageCode ?? "en"
                 
+                let funnelScanFlowDataValue = remoteConfig.configValue(forKey: "scan_flow_\(languageCode)").dataValue
+                let funnelCheckFlowDataValue = remoteConfig.configValue(forKey: "check_flow_\(languageCode)").dataValue
                 let productValue = remoteConfig.configValue(forKey: "product_subscription_\(languageCode)").dataValue
+                
+                let funnelScanFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelScanFlowDataValue)
+                let funnelCheckFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelCheckFlowDataValue)
                 let productLocalize: [RemoteSubscription]? = try? decoder.decode([RemoteSubscription].self, from: productValue)
                 
                 let remoteResponse = RemoteResponse(
+                    appkey1: key1,
+                    appkey2: key2,
                     dismissDelay: Int(truncating: dismissDelay),
+                    scanFlow: funnelScanFlow,
+                    checkFlow: funnelCheckFlow,
                     productLocalize: productLocalize
                 )
 
                 self.remoteRespone = remoteResponse
-                completion?(remoteResponse)
-                return
+                self.isRemoteLoaded = true
+                completion?()
             } else {
-                completion?(nil)
-                return
+                self.isRemoteLoaded = true
+                completion?()
             }
         }
     }
+    
 }
 
 extension StorageService: StorageServiceInterface {

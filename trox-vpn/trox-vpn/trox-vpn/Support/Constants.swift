@@ -38,6 +38,12 @@ struct Constants {
     }
     
     static let apiKey: String = "e5250f91-0e34-4ce1-8c2e-ab3e7e0a7d04"
+    static let skarbID: String = "trox"
+    
+    struct Branch {
+        static let key = "key_live_nrc4ub2oIctuadg81rilQaolqBkzza9w"
+        static let testKey = "key_test_jwc8DfZmVexrdobY5rabRhhetxayrhZa"
+    }
     
     struct Support {
         static let email: String = "info@samtandyrspzoo.com"

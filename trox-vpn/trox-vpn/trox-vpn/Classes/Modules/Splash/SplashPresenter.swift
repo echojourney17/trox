@@ -6,7 +6,7 @@ protocol SplashPresenterInterface {
     var view: SplashView? { get set }
     var didLoadFinish: ((SplashMode) -> Void)? { get set }
     
-//    func showFunnel(type: FunnelFlowType)
+    func showFunnel(type: FunnelFlowType)
     func showOrganic()
     
     func viewDidLoad()
@@ -14,34 +14,28 @@ protocol SplashPresenterInterface {
 }
 
 struct RemoteResponse {
-//    var appkey1: String?
-//    var appkey2: String?
+    var appkey1: String?
+    var appkey2: String?
     var dismissDelay: Int
-//    var scanFlow: FunnelModel?
-//    var checkFlow: FunnelModel?
+    var scanFlow: FunnelModel?
+    var checkFlow: FunnelModel?
     var productLocalize: [RemoteSubscription]?
     
-//    var keys: [String] {
-//        var k: [String] = []
-//        if let appkey1 = appkey1 {
-//            k.append(appkey1)
-//        }
-//        if let appkey2 = appkey2 {
-//            k.append(appkey2)
-//        }
-//        return k
-//    }
-}
-
-struct RemoteSubscription: Codable {
-    var productId: String
-    var description: String
-    var name: String
+    var keys: [String] {
+        var k: [String] = []
+        if let appkey1 = appkey1 {
+            k.append(appkey1)
+        }
+        if let appkey2 = appkey2 {
+            k.append(appkey2)
+        }
+        return k
+    }
 }
 
 enum SplashMode {
     case organic
-//    case funnel(flow: FunnelFlowType)
+    case funnel(flow: FunnelFlowType)
 }
 
 class SplashPresenter {
@@ -93,17 +87,11 @@ class SplashPresenter {
         self.storeService.load { [weak self] in
             self?.group.leave()
         }
-        
-        self.group.enter()
-        self.storageService.loadRemoteKeys(completion: { [weak self] remoteConfig in
-            self?.group.leave()
-        })
 
         group.notify(queue: .main, execute: { [weak self] in
-            guard let strongSelf = self else {
-                return
+            if let mode = self?.mode {
+                self?.didLoadFinish?(mode)
             }
-            strongSelf.didLoadFinish?(strongSelf.mode)
         })
     }
     
@@ -111,6 +99,13 @@ class SplashPresenter {
 
 extension SplashPresenter: SplashPresenterInterface {
 
+    func showFunnel(type: FunnelFlowType) {
+        let mode = SplashMode.funnel(flow: type)
+        self.load()
+        self.view?.updateUI(mode: mode)
+        self.mode = mode
+    }
+    
     func showOrganic() {
         group.enter()
         self.mode = .organic
@@ -119,7 +114,7 @@ extension SplashPresenter: SplashPresenterInterface {
     }
     
     func viewDidLoad() {
-        self.load()
+
     }
     
     func viewDidFinish() {

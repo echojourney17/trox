@@ -15,7 +15,7 @@ struct ServerResponse: Codable {
 
 protocol ApplicationNetworkServiceInterface: AnyObject {
     func servers(apiKey: String) -> AnyPublisher<[Server], ErrorResponse>
-//    func sendEvent(requestData: EventRequest)
+    func sendEvent(requestData: EventRequest)
 }
 
 final class ApplicationNetworkService: ApplicationNetworkServiceInterface {
@@ -26,22 +26,22 @@ final class ApplicationNetworkService: ApplicationNetworkServiceInterface {
         return NetworkService.request(ApplicationEndpoint.servers(apiKey: apiKey))
     }
     
-//    private func sendEvent(requestData: EventRequest) -> AnyPublisher<String, ErrorResponse> {
-//        return NetworkService.request(ApplicationEndpoint.events(requestData: requestData))
-//    }
+    private func sendEvent(requestData: EventRequest) -> AnyPublisher<String, ErrorResponse> {
+        return NetworkService.request(ApplicationEndpoint.events(requestData: requestData))
+    }
     
-//    func sendEvent(requestData: EventRequest) {
-//        self.sendEvent(requestData: requestData).sink { completionHandler in
-//            switch completionHandler {
-//                case .failure(let error):
-//                    print(error)
-//                default:
-//                    break
-//            }
-//        } receiveValue: { response in
-//            print(response)
-//        }.store(in: &cancellables)
-//    }
+    func sendEvent(requestData: EventRequest) {
+        self.sendEvent(requestData: requestData).sink { completionHandler in
+            switch completionHandler {
+                case .failure(let error):
+                    print(error)
+                default:
+                    break
+            }
+        } receiveValue: { response in
+            print(response)
+        }.store(in: &cancellables)
+    }
     
 }
 
@@ -50,7 +50,7 @@ enum ApplicationEndpoint: URLRequestConvertible {
 //    static let route: String = "servers.php"
     
     case servers(apiKey: String)
-//    case events(requestData: EventRequest)
+    case events(requestData: EventRequest)
     
     func asURLRequest() throws -> URLRequest {
         let url = try EnvironmentConfiguration.current.baseURL.asURL()
@@ -80,8 +80,8 @@ enum ApplicationEndpoint: URLRequestConvertible {
         switch self {
         case .servers:
             return .get
-//        case .events:
-//            return .post
+        case .events:
+            return .post
         }
     }
     
@@ -89,8 +89,8 @@ enum ApplicationEndpoint: URLRequestConvertible {
         switch self {
         case .servers:
             return "servers.php"
-//        case .events:
-//            return "events.php"
+        case .events:
+            return "events.php"
         }
     }
     
@@ -100,8 +100,8 @@ enum ApplicationEndpoint: URLRequestConvertible {
             var params = [String: String]()
             params["api_key"] = apiKey
             return params
-//        case .events(let requestData):
-//            return requestData.doDict()
+        case .events(let requestData):
+            return requestData.doDict()
         }
     }
     
