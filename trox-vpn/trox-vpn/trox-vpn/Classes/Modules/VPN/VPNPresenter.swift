@@ -8,6 +8,7 @@ protocol VPNPresenterInterface: AnyObject {
     
     func powerDidTap()
     
+    func resetFunnel()
     func viewDidLoad()
     func viewWillAppear()
 }
@@ -110,7 +111,7 @@ class VPNPresenter {
                 .attr
                 .fonted(FontFamily.Poppins.bold.font(size: 16))
                 .colored(.black)
-            let kbAttributed = " MB/S"
+            let kbAttributed = L10n.Vpn.mbs
                 .attr
                 .fonted(FontFamily.Poppins.medium.font(size: 12))
                 .colored(.black)
@@ -176,6 +177,10 @@ class VPNPresenter {
     
 }
 extension VPNPresenter: VPNPresenterInterface {
+    
+    func resetFunnel() {
+        self.storageService.isFunnelShowed = false
+    }
     
     func powerDidTap() {
         self.onDidVPNConnectTapped()

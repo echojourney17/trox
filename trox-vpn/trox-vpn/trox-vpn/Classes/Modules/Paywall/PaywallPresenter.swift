@@ -10,6 +10,7 @@ import SkarbSDK
 
 protocol PaywallPresenterInterface {
     var view: PaywallView? { get set }
+    var items: [SinglePaywallItem] { get }
     var didEvent: PaywallViewEventHandler? { get set }
     var didDismiss: Completion? { get set }
     
@@ -30,6 +31,15 @@ class PaywallPresenter {
     private var products: [ProductDTO] = []
     private var current: ProductDTO? {
         return products.first(where: { $0.isSelected == true })
+    }
+    var items: [SinglePaywallItem] {
+        let paywall = self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
+        let items = [
+            SinglePaywallItem.secure(string: paywall.secureString),
+            SinglePaywallItem.protection(string: paywall.protectionString),
+            SinglePaywallItem.verification(string: paywall.verificationString)
+        ]
+        return items
     }
     
     init(view: PaywallView, storeService: StoreServiceInterface, apiService: APINetworkServiceInterface, storageService: StorageServiceInterface, type: Paywall) {
@@ -86,14 +96,16 @@ extension PaywallPresenter: PaywallPresenterInterface {
                 let productDescription = self.products.first(where: { $0.isSelected == true })?.singleDescription ?? ""
                 self.view?.display(
                     products: self.products,
-                    productDescription: productDescription
+                    productDescription: productDescription, 
+                    paywallLocalize: self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
                 )
                 SkarbSDK.sendTest(name: "pw_one", group: "")
             case .single(let dismissDelay):
                 SkarbSDK.sendTest(name: "pw_threelong", group: "")
                 self.view?.display(
                     productDescription: self.current?.singleDescription ?? "",
-                    dismissDelay: dismissDelay
+                    dismissDelay: dismissDelay, 
+                    paywallLocalize: self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
                 )
         }
         
@@ -112,13 +124,13 @@ extension PaywallPresenter: PaywallPresenterInterface {
     }
     
     private func trackSubscribeEvent(productId: String) {
-//        let requestEvent = EventRequest(
-//            api_key: Constants.apiKey,
-//            event: .subscribe,
-//            product: productId,
-//            af_data: AnalyticsValues.conversionInfo
-//        )
-//        self.apiService.application.sendEvent(requestData: requestEvent)
+        let requestEvent = EventRequest(
+            api_key: Constants.apiKey,
+            event: .subscribe,
+            product: productId,
+            af_data: AnalyticsValues.conversionInfo
+        )
+        self.apiService.application.sendEvent(requestData: requestEvent)
     }
     
     func productDidSelect(id: String) {
@@ -137,7 +149,11 @@ extension PaywallPresenter: PaywallPresenterInterface {
             }
             return newProduct
         })
-        self.view?.display(products: self.products, productDescription: description ?? "")
+        self.view?.display(
+            products: self.products,
+            productDescription: description ?? "",
+            paywallLocalize: nil
+        )
     }
     
 }

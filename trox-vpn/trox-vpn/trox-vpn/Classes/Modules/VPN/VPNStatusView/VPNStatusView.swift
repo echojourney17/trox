@@ -32,7 +32,7 @@ class VPNStatusView: UIView {
             color: .white
         )
         timeStatusLabel.textAlignment = .right
-        timeStatusLabel.text = "Time"
+        timeStatusLabel.text = L10n.Vpn.time
         return timeStatusLabel
     }()
     
@@ -62,7 +62,7 @@ class VPNStatusView: UIView {
             font: FontFamily.Poppins.regular.font(size: 16),
             color: .white
         )
-        statusLabel.text = "Status"
+        statusLabel.text = L10n.Vpn.status
         
         statusStackView.addArrangedSubview(statusLabel)
         statusStackView.addArrangedSubview(timeStatusLabel)
@@ -74,7 +74,7 @@ class VPNStatusView: UIView {
     func configure(status: ConnectionStatus) {
         self.connectionLabel.text = status.title
         self.timeLabel.text = status.time
-        self.timeStatusLabel.text = status.time.isEmpty ? "" : "Time"
+        self.timeStatusLabel.text = status.time.isEmpty ? "" : L10n.Vpn.time
     }
     
     /*

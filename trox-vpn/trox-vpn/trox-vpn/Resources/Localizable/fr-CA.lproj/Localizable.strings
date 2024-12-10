@@ -1,0 +1,64 @@
+"Error" = "Erreur";
+"Agree" = "Accepter";
+
+"Splash.Description" = "RAPIDE, ILLIMITÉ & SÉCURISÉ";
+
+"Onboard.Next" = "Suivant";
+"Onboard.Protect.Title" = "Protégez votre connexion";
+"Onboard.Protect.Description" = "Appuyez pour activer le VPN et protéger instantanément vos données en une seule étape simple";
+
+"Onboard.Location.Title" = "Choisissez votre emplacement";
+"Onboard.Location.Description" = "Sélectionnez un pays pour vous connecter au VPN et commencer à profiter d’un streaming sécurisé";
+
+"Onboard.IP.Title" = "Vérifiez vos données IP";
+"Onboard.IP.Description" = "Consultez les détails de votre IP et assurez-vous que la connexion est sécurisée en une simple action";
+
+"CheckNetwork.Download" = "Téléchargement";
+"CheckNetwork.Upload" = "Téléversement";
+
+"Data.CheckIPData" = "Vérifier les données IP";
+"Data.IPData" = "Données IP";
+"Data.IPAddress" = "Adresse IP";
+"Data.Location" = "Localisation";
+"Data.PostalCode" = "Code postal";
+"Data.CountryCode" = "Code pays";
+
+"Settings" = "Paramètres";
+"Settings.PrivacyPolicy" = "Politique de confidentialité";
+"Settings.ManageSubscription" = "Gérer l'abonnement";
+"Settings.RestorePurchases" = "Restaurer les achats";
+"Settings.HelpSupport" = "Aide & Assistance";
+"Settings.TermsOfService" = "Conditions d'utilisation";
+
+"VPN.Time" = "Temps";
+"VPN.Locations" = "Emplacements";
+"VPN.Status" = "Statut";
+"VPN.MBS" = " MB/S";
+"VPN.Stop" = "Arrêter";
+"VPN.Close" = "Fermer";
+"VPN.Start" = "Démarrer";
+"VPN.Connected" = "Connecté";
+"VPN.Connecting" = "Connexion...";
+"VPN.NotConnected" = "Non connecté";
+"VPN.Fail" = "Échec";
+
+"Data.IPData" = "Données IP";
+"PrivacyPolicy" = "
+    Politique de Confidentialité
+
+    Informations que Nous Collectons et Utilisons
+    Lorsque vous utilisez notre application, les pratiques suivantes s'appliquent : • Notre service ne stocke ni ne suit les données des utilisateurs. Nous fournissons des fonctionnalités de chiffrement du trafic sans conserver d'informations personnelles. Aucune trace des activités des utilisateurs n'est conservée. • Nous ne collectons pas les informations que vous pourriez fournir directement, telles que les noms, adresses e-mail ou numéros de contact. Les e-mails sont utilisés uniquement pour répondre aux demandes soumises via nos canaux officiels et ne permettent pas d'identifier les utilisateurs individuellement. • Les données agrégées, telles que l'utilisation totale du trafic par tous les utilisateurs dans un pays spécifique, sont enregistrées pour améliorer la qualité du service. Ces informations sont généralisées et ne sont pas liées à des utilisateurs individuels. • Aucune donnée spécifique à l'appareil, telles que les adresses IP, modèles d'appareils, systèmes d'exploitation ou horodatages, n'est capturée. Les historiques de navigation, contenus du trafic et requêtes DNS ne sont également pas suivis. • Les services tiers intégrés à notre application peuvent collecter des données pour leurs propres besoins. Leurs politiques de confidentialité respectives sont disponibles ici : Google Analytics for Firebase (https://firebase.google.com/policies/analytics), Appsflyer (https://www.appsflyer.com/legal/privacy-policy/).
+
+    Liens vers des Sites Externes
+    Notre service peut contenir des liens vers des sites tiers. En cliquant sur ces liens, vous quittez notre plateforme. Veuillez consulter les politiques de confidentialité de ces sites externes, car nous ne sommes pas responsables de leur contenu, de leurs pratiques de données ou de leurs politiques.
+
+    Confidentialité des Enfants
+    Notre service n'est pas destiné aux personnes de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles auprès d'enfants. Si nous découvrons que de telles données ont été fournies, elles seront supprimées immédiatement. Les parents ou tuteurs qui savent que leur enfant a partagé des informations personnelles doivent nous contacter pour résoudre le problème immédiatement.
+
+    Modifications de Cette Politique de Confidentialité
+    Nous pouvons mettre à jour cette politique de confidentialité périodiquement. Nous encourageons les utilisateurs à consulter cette page régulièrement pour rester informés des modifications. Les notifications des mises à jour seront publiées ici.
+
+    Contactez-Nous :
+    Si vous avez des questions concernant nos pratiques en matière de confidentialité ou tout autre aspect de nos services, veuillez nous contacter par e-mail à samtandyrspzoo@proton.me
+";
+

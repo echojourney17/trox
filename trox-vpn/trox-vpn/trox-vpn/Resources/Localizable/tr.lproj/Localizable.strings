@@ -1,0 +1,64 @@
+"Error" = "Hata";
+"Agree" = "Kabul Et";
+
+"Splash.Description" = "HIZLI, SINIRSIZ & GÜVENLİ";
+
+"Onboard.Next" = "İleri";
+"Onboard.Protect.Title" = "Bağlantınızı Koruyun";
+"Onboard.Protect.Description" = "VPN'i etkinleştirmek ve verilerinizi anında korumak için dokunun, sadece bir basit adımla";
+
+"Onboard.Location.Title" = "Konumunuzu Seçin";
+"Onboard.Location.Description" = "VPN'e bağlanmak ve güvenli bir şekilde yayın akışının keyfini çıkarmak için bir ülke seçin";
+
+"Onboard.IP.Title" = "IP Verilerinizi Kontrol Edin";
+"Onboard.IP.Description" = "IP ayrıntılarını görüntüleyin ve bağlantının güvenli olduğundan emin olun";
+
+"CheckNetwork.Download" = "İndir";
+"CheckNetwork.Upload" = "Yükle";
+
+"Data.CheckIPData" = "IP Verilerini Kontrol Et";
+"Data.IPData" = "IP Verileri";
+"Data.IPAddress" = "IP Adresi";
+"Data.Location" = "Konum";
+"Data.PostalCode" = "Posta Kodu";
+"Data.CountryCode" = "Ülke Kodu";
+
+"Settings" = "Ayarlar";
+"Settings.PrivacyPolicy" = "Gizlilik Politikası";
+"Settings.ManageSubscription" = "Aboneliği Yönet";
+"Settings.RestorePurchases" = "Satın Alımları Geri Yükle";
+"Settings.HelpSupport" = "Yardım ve Destek";
+"Settings.TermsOfService" = "Hizmet Şartları";
+"Settings.RestoreSuccessfull" = "Geri yükleme başarılı";
+
+"VPN.Time" = "Süre";
+"VPN.Locations" = "Konumlar";
+"VPN.Status" = "Durum";
+"VPN.MBS" = " MB/S";
+"VPN.Stop" = "Durdur";
+"VPN.Close" = "Kapat";
+"VPN.Start" = "Başlat";
+"VPN.Connected" = "Bağlı";
+"VPN.Connecting" = "Bağlanıyor...";
+"VPN.NotConnected" = "Bağlı değil";
+"VPN.Fail" = "Başarısız";
+
+"PrivacyPolicy" = "
+    Gizlilik Politikası
+
+    Topladığımız ve Kullandığımız Bilgiler
+    Uygulamamızla etkileşime geçtiğinizde aşağıdaki veri uygulamaları geçerlidir: • Hizmetimiz kullanıcı verilerini saklamaz veya takip etmez. Trafik şifreleme özellikleri sağlıyoruz ve hiçbir kişisel bilgiyi saklamıyoruz. Kullanıcı etkinlik günlükleri tutulmamaktadır. • Adlar, e-posta adresleri veya iletişim numaraları gibi doğrudan sağladığınız ayrıntıları toplamıyoruz. E-postalar yalnızca resmi kanallarımız aracılığıyla gönderilen sorulara yanıt vermek için kullanılır ve bireysel kullanıcıları tanımlayamaz. • Belirli bir ülkedeki tüm kullanıcıların toplam trafik kullanımı gibi genel veriler, hizmet kalitesini artırmak için kaydedilir. Bu bilgiler genelleştirilmiş olup bireysel kullanıcılara bağlı değildir. • IP adresleri, cihaz modelleri, işletim sistemleri veya zaman damgaları gibi cihaza özgü veriler toplanmaz. Tarama geçmişleri, trafik içerikleri ve DNS sorguları da izlenmez. • Uygulamamızda entegre edilmiş üçüncü taraf hizmetler, kendi amaçları doğrultusunda veri toplayabilir. Bu hizmetlerin gizlilik politikaları şu adreste bulunabilir: Google Analytics for Firebase (https://firebase.google.com/policies/analytics), Appsflyer (https://www.appsflyer.com/legal/privacy-policy/).
+
+    Harici Sitelerle Bağlantılar
+    Hizmetimiz üçüncü taraf sitelere bağlantılar içerebilir. Bu bağlantılara tıkladığınızda platformumuzdan ayrılırsınız. Lütfen bu harici sitelerin gizlilik politikalarını inceleyin, çünkü içeriklerinden, veri uygulamalarından veya politikalarından sorumlu değiliz.
+
+    Çocukların Gizliliği
+    Hizmetimiz 13 yaşın altındaki bireyler için tasarlanmamıştır. Çocuklardan bilerek kişisel veri toplamıyoruz. Böyle bir verinin sağlandığını fark edersek, hemen silinir. Çocuğunuzun kişisel bilgilerini paylaştığından haberdar olan ebeveynler veya veliler hemen bizimle iletişime geçmelidir.
+
+    Bu Gizlilik Politikasındaki Değişiklikler
+    Bu Gizlilik Politikasını periyodik olarak güncelleyebiliriz. Kullanıcılar değişiklikler hakkında bilgi sahibi olmak için bu sayfayı düzenli olarak kontrol etmeye teşvik edilir. Güncellemelerin bildirimleri burada yayınlanacaktır.
+
+    Bizimle İletişime Geçin:
+    Gizlilik uygulamalarımız veya hizmetlerimizle ilgili herhangi bir sorunuz varsa, lütfen şu e-posta adresinden bizimle iletişime geçin: samtandyrspzoo@proton.me
+";
+

@@ -47,7 +47,7 @@ class SettingsPresenter: NSObject {
         self.storeService.restore { [weak self] in
             DispatchQueue.main.async {
                 self?.view?.stopLoading()
-                self?.view?.showAlert(message: "Restore successfull", completion: nil)
+                self?.view?.showAlert(message: L10n.Settings.restoreSuccessfull, completion: nil)
             }
         }
     }

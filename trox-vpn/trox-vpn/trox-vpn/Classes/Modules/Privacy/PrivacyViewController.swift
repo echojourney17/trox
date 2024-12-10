@@ -11,7 +11,7 @@ class PrivacyViewController: CommonViewController {
 
     private lazy var textView: UITextView = {
         var view = UITextView()
-        view.text = Constants.Support.privacyContent
+        view.text = L10n.privacyPolicy
         view.font = FontFamily.Poppins.regular.font(size: 16)
         view.textColor = Asset.dark.color
         return view
@@ -25,11 +25,11 @@ class PrivacyViewController: CommonViewController {
     }
     
     private func setupUI() {
-        self.appearance.title = "Privacy Policy"
+        self.appearance.title = L10n.Settings.privacyPolicy
         self.appearance.isNavigationHidden = false
         self.appearance.isBackButtonHidden = true
         
-        let agreeButton = ViewFactory.Buttons.main(title: "Agree")
+        let agreeButton = ViewFactory.Buttons.main(title: L10n.agree)
         agreeButton.addAction(UIAction(handler: { [weak self] action in
             self?.dismiss(animated: true)
         }), for: .touchUpInside)

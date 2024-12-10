@@ -34,7 +34,7 @@ class DataViewController: UIViewController {
         return view
     }()
     private lazy var checkButton: UIButton = {
-        let button = ViewFactory.Buttons.main(title: "Check IP Data")
+        let button = ViewFactory.Buttons.main(title: L10n.Data.checkIPData)
         button.addAction(UIAction(handler: { [weak self] action in
             self?.presenter?.checkDidTap()
         }), for: .touchUpInside)
@@ -55,7 +55,7 @@ class DataViewController: UIViewController {
             font: FontFamily.Poppins.medium.font(size: 16),
             color: Asset.dark.color
         )
-        titleLabel.text = "IP Data"
+        titleLabel.text = L10n.Data.ipData
         titleLabel.textAlignment = .center
         
         self.view.addSubview(titleLabel)

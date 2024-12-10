@@ -41,7 +41,7 @@ class LocationsViewController: CommonViewController {
     }
     
     private func setupUI() {
-        self.appearance.title = "Locations"
+        self.appearance.title = L10n.Vpn.locations
         self.appearance.isNavigationHidden = false
         
         self.contentView.addSubview(tableView)

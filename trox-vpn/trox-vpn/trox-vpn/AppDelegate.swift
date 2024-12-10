@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         SkarbSDK.initialize(clientId: Constants.skarbID, isObservable: true)
+        SkarbSDK.isLoggingEnabled = true
         
         let navigationController = UINavigationController()
         navigationController.setNavigationBarHidden(true, animated: false)

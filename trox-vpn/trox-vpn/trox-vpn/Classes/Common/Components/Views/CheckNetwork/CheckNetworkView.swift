@@ -14,9 +14,9 @@ enum CheckNetworkMode {
     var title: String {
         switch self {
             case .upload:
-                return "Upload"
+                return L10n.CheckNetwork.upload
             case .download:
-                return "Download"
+                return L10n.CheckNetwork.download
         }
     }
     var icon: UIImage? {

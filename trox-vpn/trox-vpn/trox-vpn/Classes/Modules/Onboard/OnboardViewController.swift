@@ -72,7 +72,7 @@ class OnboardViewController: UIViewController {
         }
         
         let continueButton: UIButton = {
-            let button = ViewFactory.Buttons.main(title: "Next")
+            let button = ViewFactory.Buttons.main(title: L10n.Onboard.next)
             button.addAction(UIAction(handler: { [weak self] action in
                 self?.presenter?.didEvent?(.next)
             }), for: .touchUpInside)

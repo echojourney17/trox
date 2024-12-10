@@ -1,0 +1,64 @@
+"Error" = "Fehler";
+"Agree" = "Zustimmen";
+
+"Splash.Description" = "SCHNELL, UNBEGRENZT & SICHER";
+
+"Onboard.Next" = "Weiter";
+"Onboard.Protect.Title" = "Schützen Sie Ihre Verbindung";
+"Onboard.Protect.Description" = "Tippen Sie, um VPN zu aktivieren und Ihre Daten mit nur einem einfachen Schritt zu schützen";
+
+"Onboard.Location.Title" = "Wählen Sie Ihren Standort";
+"Onboard.Location.Description" = "Wählen Sie ein Land, um eine Verbindung zum VPN herzustellen und sicheres Streaming zu genießen";
+
+"Onboard.IP.Title" = "Prüfen Sie Ihre IP-Daten";
+"Onboard.IP.Description" = "Sehen Sie IP-Details ein und stellen Sie sicher, dass die Verbindung mit nur einem einfachen Schritt sicher ist";
+
+"CheckNetwork.Download" = "Download";
+"CheckNetwork.Upload" = "Upload";
+
+"Data.CheckIPData" = "IP-Daten prüfen";
+"Data.IPData" = "IP-Daten";
+"Data.IPAddress" = "IP-Adresse";
+"Data.Location" = "Standort";
+"Data.PostalCode" = "Postleitzahl";
+"Data.CountryCode" = "Ländercode";
+
+"Settings" = "Einstellungen";
+"Settings.PrivacyPolicy" = "Datenschutzerklärung";
+"Settings.ManageSubscription" = "Abonnement verwalten";
+"Settings.RestorePurchases" = "Käufe wiederherstellen";
+"Settings.HelpSupport" = "Hilfe & Support";
+"Settings.TermsOfService" = "Nutzungsbedingungen";
+"Settings.RestoreSuccessfull" = "Wiederherstellung erfolgreich";
+
+"VPN.Time" = "Zeit";
+"VPN.Locations" = "Standorte";
+"VPN.Status" = "Status";
+"VPN.MBS" = " MB/S";
+"VPN.Stop" = "Stoppen";
+"VPN.Close" = "Schließen";
+"VPN.Start" = "Starten";
+"VPN.Connected" = "Verbunden";
+"VPN.Connecting" = "Verbinde...";
+"VPN.NotConnected" = "Nicht verbunden";
+"VPN.Fail" = "Fehler";
+
+"PrivacyPolicy" = "
+    Datenschutzerklärung
+
+    Informationen, die wir erfassen und verwenden
+    Wenn Sie unsere App nutzen, gelten folgende Datenpraktiken: • Unser Dienst speichert oder verfolgt keine Benutzerdaten. Wir bieten Funktionen zur Datenverschlüsselung, ohne persönliche Informationen zu speichern. Es werden keine Benutzeraktivitätsprotokolle geführt. • Wir sammeln keine direkt bereitgestellten Daten wie Namen, E-Mail-Adressen oder Telefonnummern. E-Mails werden ausschließlich zur Beantwortung von Anfragen verwendet, die über unsere offiziellen Kanäle eingehen, und können Benutzer nicht individuell identifizieren. • Aggregierte Daten wie die gesamte Datennutzung aller Benutzer in einem bestimmten Land werden aufgezeichnet, um die Servicequalität zu verbessern. Diese Informationen sind verallgemeinert und nicht mit einzelnen Benutzern verknüpft. • Es werden keine gerätespezifischen Daten wie IP-Adressen, Gerätemodelle, Betriebssysteme oder Zeitstempel erfasst. Auch Browserverläufe, Dateninhalte oder DNS-Anfragen werden nicht nachverfolgt. • In unsere App integrierte Drittanbieterdienste können Daten für ihre eigenen Zwecke erfassen. Die Datenschutzerklärungen dieser Drittanbieterdienste finden Sie hier: Google Analytics for Firebase (https://firebase.google.com/policies/analytics), Appsflyer (https://www.appsflyer.com/legal/privacy-policy/).
+
+    Links zu externen Websites
+    Unser Dienst kann Links zu Websites Dritter enthalten. Wenn Sie auf solche Links klicken, verlassen Sie unsere Plattform. Bitte überprüfen Sie die Datenschutzerklärungen dieser externen Websites, da wir nicht für deren Inhalte, Datenpraktiken oder Richtlinien verantwortlich sind.
+
+    Datenschutz für Kinder
+    Unser Dienst richtet sich nicht an Personen unter 13 Jahren. Wir erfassen wissentlich keine persönlichen Daten von Kindern. Sollten wir feststellen, dass solche Daten bereitgestellt wurden, werden diese umgehend gelöscht. Eltern oder Erziehungsberechtigte, die wissen, dass ihr Kind persönliche Daten geteilt hat, sollten uns umgehend kontaktieren.
+
+    Änderungen an dieser Datenschutzerklärung
+    Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Benutzer werden ermutigt, diese Seite regelmäßig zu überprüfen, um über Änderungen informiert zu bleiben. Benachrichtigungen über Aktualisierungen werden hier veröffentlicht.
+
+    Kontaktieren Sie uns:
+    Wenn Sie Fragen zu unseren Datenschutzpraktiken oder zu unseren Diensten haben, kontaktieren Sie uns bitte per E-Mail unter: samtandyrspzoo@proton.me
+";
+

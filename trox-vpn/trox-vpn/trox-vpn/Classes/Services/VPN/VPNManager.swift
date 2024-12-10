@@ -16,14 +16,14 @@ enum ConnectionStatus {
     
     var title: String {
         switch self {
-        case .connect(let date):
-            return "Connected"
+        case .connect:
+            return L10n.Vpn.connected
         case .connection:
-            return "Connecting..."
+            return L10n.Vpn.connecting
         case .disconnect:
-            return "Not connected"
+            return L10n.Vpn.notConnected
         case .fail:
-            return "Fail"
+            return L10n.Vpn.fail
         }
     }
     var time: String {

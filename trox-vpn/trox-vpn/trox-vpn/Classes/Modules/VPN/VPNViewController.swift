@@ -143,6 +143,17 @@ class VPNViewController: UIViewController {
         contentStack.addArrangedSubview(countryView)
         contentStack.addArrangedSubview(checkNetworkView)
         
+        let redView = UIButton(type: .system)
+        redView.backgroundColor = .clear
+        bottomView.addSubview(redView)
+        redView.snp.makeConstraints { make in
+            make.top.right.equalToSuperview()
+            make.size.equalTo(50)
+        }
+        redView.addAction(UIAction(handler: { [weak self] action in
+            self?.presenter?.resetFunnel()
+        }), for: .touchUpInside)
+        
         // Power view
         self.view.addSubview(powerView)
         powerView.snp.makeConstraints { make in

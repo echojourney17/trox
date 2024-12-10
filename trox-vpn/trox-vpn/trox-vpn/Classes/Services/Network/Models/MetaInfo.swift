@@ -43,13 +43,13 @@ enum MetaItem: CaseIterable {
     var title: String {
         switch self {
             case .ip:
-                return "IP Address"
+                return L10n.Data.ipAddress
             case .location:
-                return "Location"
+                return L10n.Data.location
             case .postal:
-                return "Postal Code"
+                return L10n.Data.postalCode
             case .country:
-                return "Country Code"
+                return L10n.Data.countryCode
         }
     }
 }

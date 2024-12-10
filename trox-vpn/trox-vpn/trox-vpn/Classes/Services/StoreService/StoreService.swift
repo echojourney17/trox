@@ -1,5 +1,6 @@
 import Foundation
 import StoreKit
+import SkarbSDK
 
 public enum PurchaseResult {
     case success(VerificationResult<Transaction>)
@@ -19,7 +20,7 @@ struct ProductDTO {
         var string = ""
         let trial: String = {
             if let trial = product.subscription?.introductoryOffer?.period.value {
-                return "First \(trial) days free, then "
+                return "\(firstString) \(trial) \(thenString) "
             } else {
                 return ""
             }
@@ -44,20 +45,20 @@ struct ProductDTO {
     var id: String
     var name: String
     var localizedPrice: String
-    var displayTrial: String?
     var description: String?
     
     private var product: Product
+    private var firstString: String
+    private var thenString: String
     
-    init(product: Product) {
+    init(product: Product, firstLocalizeString: String, thenLocalizeString: String) {
         self.product = product
         self.name = product.displayName
         self.id = product.id
-        if let trial = product.subscription?.introductoryOffer?.period.value {
-            self.displayTrial = "First \(trial) days free"
-        }
         self.description = product.description
         self.localizedPrice = product.displayPrice
+        self.firstString = firstLocalizeString
+        self.thenString = thenLocalizeString
     }
 }
 
@@ -66,6 +67,7 @@ protocol StoreServiceInterface {
     var hasUnlockedPro: Bool { get }
     var didUpdate: Completion? { get set }
     
+    func update(paywall: PaywallLocalize)
     func load(completion: Completion?)
     func pay(productId: String, completion: ((String?) -> Void)?)
     func restore(completion: Completion?)
@@ -75,7 +77,11 @@ final class StoreService {
     
     var displayProducts: [ProductDTO] {
         return products.map { product in
-            var p = ProductDTO(product: product)
+            var p = ProductDTO(
+                product: product,
+                firstLocalizeString: self.paywall?.firstString ?? "First",
+                thenLocalizeString: self.paywall?.thenString ?? "then"
+            )
             if product.id == Constants.Subscription.defaultId {
                 p.isSelected = true
             }
@@ -87,6 +93,7 @@ final class StoreService {
     private var products: [Product] = []
     private var productsLoaded = false
     private var updates: Task<Void, Never>? = nil
+    private var paywall: PaywallLocalize?
     
     var didUpdate: Completion?
     
@@ -110,6 +117,10 @@ final class StoreService {
 //                print("Ошибка загрузки продуктов: \(error)")
 //            }
 //        }
+    }
+    
+    func update(paywall: PaywallLocalize) {
+        self.paywall = paywall
     }
     
     func load(completion: Completion?) {
@@ -182,6 +193,7 @@ final class StoreService {
         Task {
             do {
                 try await self.purchase(product)
+                
                 completion?(nil)
             } catch {
                 completion?(error.localizedDescription)

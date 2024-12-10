@@ -1,0 +1,64 @@
+"Error" = "Kesalahan";
+"Agree" = "Setuju";
+
+"Splash.Description" = "CEPAT, TANPA BATAS & AMAN";
+
+"Onboard.Next" = "Berikutnya";
+"Onboard.Protect.Title" = "Lindungi Koneksi Anda";
+"Onboard.Protect.Description" = "Ketuk untuk mengaktifkan VPN dan lindungi data Anda seketika hanya dengan satu langkah sederhana";
+
+"Onboard.Location.Title" = "Pilih Lokasi Anda";
+"Onboard.Location.Description" = "Pilih negara untuk terhubung ke VPN dan mulai menikmati streaming yang aman";
+
+"Onboard.IP.Title" = "Periksa Data IP Anda";
+"Onboard.IP.Description" = "Lihat detail IP dan pastikan koneksi Anda aman dalam satu langkah mudah";
+
+"CheckNetwork.Download" = "Unduh";
+"CheckNetwork.Upload" = "Unggah";
+
+"Data.CheckIPData" = "Periksa Data IP";
+"Data.IPData" = "Data IP";
+"Data.IPAddress" = "Alamat IP";
+"Data.Location" = "Lokasi";
+"Data.PostalCode" = "Kode Pos";
+"Data.CountryCode" = "Kode Negara";
+
+"Settings" = "Pengaturan";
+"Settings.PrivacyPolicy" = "Kebijakan Privasi";
+"Settings.ManageSubscription" = "Kelola Langganan";
+"Settings.RestorePurchases" = "Pulihkan Pembelian";
+"Settings.HelpSupport" = "Bantuan & Dukungan";
+"Settings.TermsOfService" = "Ketentuan Layanan";
+"Settings.RestoreSuccessfull" = "Pemulihan berhasil";
+
+"VPN.Time" = "Waktu";
+"VPN.Locations" = "Lokasi";
+"VPN.Status" = "Status";
+"VPN.MBS" = " MB/S";
+"VPN.Stop" = "Berhenti";
+"VPN.Close" = "Tutup";
+"VPN.Start" = "Mulai";
+"VPN.Connected" = "Terhubung";
+"VPN.Connecting" = "Menghubungkan...";
+"VPN.NotConnected" = "Tidak terhubung";
+"VPN.Fail" = "Gagal";
+
+"PrivacyPolicy" = "
+    Kebijakan Privasi
+
+    Informasi yang Kami Kumpulkan dan Gunakan
+    Ketika Anda berinteraksi dengan aplikasi kami, praktik data berikut berlaku: • Layanan kami tidak menyimpan atau melacak data pengguna. Kami menyediakan fitur enkripsi lalu lintas tanpa menyimpan informasi pribadi apa pun. Tidak ada log aktivitas pengguna yang disimpan. • Kami tidak mengumpulkan detail yang mungkin Anda berikan secara langsung, seperti nama, alamat email, atau nomor kontak. Email hanya digunakan untuk menanggapi pertanyaan yang dikirimkan melalui saluran resmi kami dan tidak dapat mengidentifikasi pengguna secara individu. • Data agregat, seperti total penggunaan lalu lintas oleh semua pengguna di negara tertentu, dicatat untuk meningkatkan kualitas layanan. Informasi ini bersifat umum dan tidak terkait dengan pengguna individu. • Kami tidak mengumpulkan data spesifik perangkat, seperti alamat IP, model perangkat, sistem operasi, atau stempel waktu. Riwayat penjelajahan, konten lalu lintas, dan kueri DNS juga tidak dilacak. • Layanan pihak ketiga yang terintegrasi dalam aplikasi kami mungkin mengumpulkan data untuk tujuan mereka sendiri. Kebijakan privasi layanan ini dapat ditemukan di: Google Analytics for Firebase (https://firebase.google.com/policies/analytics), Appsflyer (https://www.appsflyer.com/legal/privacy-policy/).
+
+    Tautan ke Situs Eksternal
+    Layanan kami dapat berisi tautan ke situs pihak ketiga. Dengan mengklik tautan tersebut, Anda akan meninggalkan platform kami. Harap tinjau kebijakan privasi situs eksternal ini karena kami tidak bertanggung jawab atas konten, praktik data, atau kebijakan mereka.
+
+    Privasi Anak
+    Layanan kami tidak ditujukan untuk individu di bawah usia 13 tahun. Kami tidak dengan sengaja mengumpulkan data pribadi dari anak-anak. Jika kami mengetahui bahwa data semacam itu telah diberikan, data tersebut akan segera dihapus. Orang tua atau wali yang menyadari anak mereka telah berbagi informasi pribadi harus segera menghubungi kami.
+
+    Perubahan pada Kebijakan Privasi Ini
+    Kami dapat memperbarui Kebijakan Privasi ini secara berkala. Pengguna didorong untuk meninjau halaman ini secara teratur untuk tetap mengetahui perubahan. Pemberitahuan tentang pembaruan akan diposting di sini.
+
+    Hubungi Kami:
+    Jika Anda memiliki pertanyaan tentang praktik privasi kami atau aspek apa pun dari layanan kami, silakan hubungi kami melalui email: samtandyrspzoo@proton.me
+";
+

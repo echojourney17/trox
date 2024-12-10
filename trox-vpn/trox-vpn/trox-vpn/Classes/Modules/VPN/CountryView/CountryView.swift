@@ -35,7 +35,7 @@ class CountryView: UIView {
             font: FontFamily.Poppins.regular.font(size: 16),
             color: Asset.textGray.color
         )
-        label.text = "Locations"
+        label.text = L10n.Vpn.locations
         
         vStack.addArrangedSubview(label)
         vStack.addArrangedSubview(hStack)

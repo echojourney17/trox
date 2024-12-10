@@ -44,7 +44,7 @@ class SettingsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Settings"
+        self.navigationItem.title = L10n.settings
     }
     
     private func setupUI() {
@@ -54,7 +54,7 @@ class SettingsViewController: UIViewController {
             font: FontFamily.Poppins.medium.font(size: 16),
             color: Asset.dark.color
         )
-        titleLabel.text = "Settings"
+        titleLabel.text = L10n.settings
         titleLabel.textAlignment = .center
         
         self.view.addSubview(titleLabel)

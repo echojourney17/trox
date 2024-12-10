@@ -41,7 +41,22 @@ internal enum FontFamily {
     internal static let thinItalic = FontConvertible(name: "Poppins-ThinItalic", family: "Poppins", path: "Poppins-ThinItalic.ttf")
     internal static let all: [FontConvertible] = [black, blackItalic, bold, boldItalic, extraBold, extraBoldItalic, extraLight, extraLightItalic, italic, light, lightItalic, medium, mediumItalic, regular, semiBold, semiBoldItalic, thin, thinItalic]
   }
-  internal static let allCustomFonts: [FontConvertible] = [Poppins.all].flatMap { $0 }
+  internal enum SFProText {
+    internal static let bold = FontConvertible(name: "SFProText-Bold", family: "SF Pro Text", path: "SFProText-Bold.ttf")
+    internal static let boldItalic = FontConvertible(name: "SFProText-BoldItalic", family: "SF Pro Text", path: "SFProText-BoldItalic.ttf")
+    internal static let heavy = FontConvertible(name: "SFProText-Heavy", family: "SF Pro Text", path: "SFProText-Heavy.ttf")
+    internal static let heavyItalic = FontConvertible(name: "SFProText-HeavyItalic", family: "SF Pro Text", path: "SFProText-HeavyItalic.ttf")
+    internal static let light = FontConvertible(name: "SFProText-Light", family: "SF Pro Text", path: "SFProText-Light.ttf")
+    internal static let lightItalic = FontConvertible(name: "SFProText-LightItalic", family: "SF Pro Text", path: "SFProText-LightItalic.ttf")
+    internal static let medium = FontConvertible(name: "SFProText-Medium", family: "SF Pro Text", path: "SFProText-Medium.ttf")
+    internal static let mediumItalic = FontConvertible(name: "SFProText-MediumItalic", family: "SF Pro Text", path: "SFProText-MediumItalic.ttf")
+    internal static let regular = FontConvertible(name: "SFProText-Regular", family: "SF Pro Text", path: "SFProText-Regular.ttf")
+    internal static let italic = FontConvertible(name: "SFProText-RegularItalic", family: "SF Pro Text", path: "SFProText-RegularItalic.ttf")
+    internal static let semibold = FontConvertible(name: "SFProText-Semibold", family: "SF Pro Text", path: "SFProText-Semibold.ttf")
+    internal static let semiboldItalic = FontConvertible(name: "SFProText-SemiboldItalic", family: "SF Pro Text", path: "SFProText-SemiboldItalic.ttf")
+    internal static let all: [FontConvertible] = [bold, boldItalic, heavy, heavyItalic, light, lightItalic, medium, mediumItalic, regular, italic, semibold, semiboldItalic]
+  }
+  internal static let allCustomFonts: [FontConvertible] = [Poppins.all, SFProText.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

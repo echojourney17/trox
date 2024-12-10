@@ -1,0 +1,64 @@
+"Error" = "エラー";
+"Agree" = "同意する";
+
+"Splash.Description" = "高速、無制限、安全";
+
+"Onboard.Next" = "次へ";
+"Onboard.Protect.Title" = "接続を保護";
+"Onboard.Protect.Description" = "VPNを有効にして、わずか1ステップでデータを保護";
+
+"Onboard.Location.Title" = "ロケーションを選択";
+"Onboard.Location.Description" = "VPNに接続する国を選択し、安全なストリーミングを楽しもう";
+
+"Onboard.IP.Title" = "IPデータを確認";
+"Onboard.IP.Description" = "IP詳細を確認し、安全な接続を簡単にチェック";
+
+"CheckNetwork.Download" = "ダウンロード";
+"CheckNetwork.Upload" = "アップロード";
+
+"Data.CheckIPData" = "IPデータを確認";
+"Data.IPData" = "IPデータ";
+"Data.IPAddress" = "IPアドレス";
+"Data.Location" = "ロケーション";
+"Data.PostalCode" = "郵便番号";
+"Data.CountryCode" = "国コード";
+
+"Settings" = "設定";
+"Settings.PrivacyPolicy" = "プライバシーポリシー";
+"Settings.ManageSubscription" = "サブスクリプションを管理";
+"Settings.RestorePurchases" = "購入を復元";
+"Settings.HelpSupport" = "ヘルプ＆サポート";
+"Settings.TermsOfService" = "利用規約";
+"Settings.RestoreSuccessfull" = "復元が成功しました";
+
+"VPN.Time" = "時間";
+"VPN.Locations" = "ロケーション";
+"VPN.Status" = "ステータス";
+"VPN.MBS" = " MB/S";
+"VPN.Stop" = "停止";
+"VPN.Close" = "閉じる";
+"VPN.Start" = "開始";
+"VPN.Connected" = "接続済み";
+"VPN.Connecting" = "接続中...";
+"VPN.NotConnected" = "未接続";
+"VPN.Fail" = "失敗";
+
+"PrivacyPolicy" = "
+    プライバシーポリシー
+
+    収集および使用する情報
+    アプリをご利用いただく際、以下のデータ処理が適用されます： • 本サービスでは、ユーザーデータを保存または追跡しません。トラフィック暗号化機能を提供しますが、個人情報は保持しません。ユーザーの活動ログは記録されません。 • 名前、メールアドレス、連絡先番号など、直接提供される可能性のある詳細は収集しません。メールは公式チャネルを通じて送信される問い合わせへの返信のみに使用され、個々のユーザーを特定するものではありません。 • 特定の国のすべてのユーザーによるトラフィック使用量などの集計データは、サービス品質向上のために記録されます。この情報は一般化され、個々のユーザーにはリンクされません。 • IPアドレス、デバイスモデル、オペレーティングシステム、タイムスタンプなどのデバイス固有データは記録されません。また、閲覧履歴、トラフィック内容、DNSクエリも追跡されません。 • アプリに統合されたサードパーティサービスは、それぞれの目的でデータを収集する場合があります。これらのサービスのプライバシーポリシーは以下で確認できます：Google Analytics for Firebase (https://firebase.google.com/policies/analytics), Appsflyer (https://www.appsflyer.com/legal/privacy-policy/).
+
+    外部サイトへのリンク
+    本サービスにはサードパーティサイトへのリンクが含まれる場合があります。これらのリンクをクリックすると、当プラットフォームを離れます。外部サイトのプライバシーポリシーを確認してください。当社はこれらのサイトのコンテンツ、データ処理、ポリシーに責任を負いません。
+
+    子供のプライバシー
+    本サービスは13歳未満の個人を対象としていません。子供から個人データが提供されたことが判明した場合、速やかに削除されます。子供が個人情報を共有していることに気付いた保護者は、直ちにご連絡ください。
+
+    本プライバシーポリシーの変更
+    本プライバシーポリシーは定期的に更新される場合があります。ユーザーの皆様には、本ページを定期的に確認して変更について把握することをお勧めします。更新の通知は本ページに掲載されます。
+
+    お問い合わせ:
+    プライバシー実践またはサービスに関するご質問がございましたら、以下のメールアドレスでお問い合わせください: samtandyrspzoo@proton.me
+";
+

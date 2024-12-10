@@ -10,7 +10,7 @@ class AppCoordinator: Coordinator {
 
     var storageService: StorageServiceInterface
     let apiService = APINetworkService()
-    let storeService = StoreService()
+    var storeService: StoreServiceInterface = StoreService()
     
     var isDeeplinkOpened: Bool = false
     var isAppActive: Bool = false
@@ -25,6 +25,8 @@ class AppCoordinator: Coordinator {
     }
         
     func start() {
+        let paywall = self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
+        self.storeService.update(paywall: paywall)
         self.showSplashFlow(completion: { [weak self] mode in
             switch mode {
                 case .organic:
@@ -36,13 +38,13 @@ class AppCoordinator: Coordinator {
         })
     }
     
-    private func showOrganic() {
+    private func showOrganic(failFunnelStory: Bool = false) {
         if self.storageService.isOnboardingShowed == false {
             self.storageService.isOnboardingShowed = true
             self.showOnboard()
         } else {
             self.showTab(autoConnect: false)
-            if self.storeService.hasUnlockedPro == false {
+            if self.storeService.hasUnlockedPro == false && failFunnelStory == false {
                 self.showPaywall(completion: { [weak self] in
                     self?.showPrivacyIfNeeded()
                 })
@@ -231,7 +233,9 @@ extension AppCoordinator: FunnelCoordinatorDelegate {
     
     func funnelCoordinatorDidCaptureScreen(coordinator: FunnelCoordinator) {
         self.removeChildCoordinator(coordinator)
-        self.showOrganic()
+        self.storageService.isPrivacyShowed = true
+        self.storageService.isOnboardingShowed = true
+        self.showOrganic(failFunnelStory: true)
     }
     
     func funnelCoordinatorDidEndFlow(coordinator: FunnelCoordinator) {

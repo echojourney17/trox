@@ -21,7 +21,7 @@ class PowerView: UIView {
             font: FontFamily.Poppins.semiBold.font(size: 20),
             color: Asset.dark.color
         )
-        label.text = "Status"
+        label.text = L10n.Vpn.status
         return label
     }()
     
@@ -77,13 +77,13 @@ class PowerView: UIView {
     func apply(status: ConnectionStatus) {
         switch status {
         case .connect:
-            self.statusLabel.text = "Stop"
+            self.statusLabel.text = L10n.Vpn.stop
         case .connection:
-            self.statusLabel.text = "Close"
+            self.statusLabel.text = L10n.Vpn.close
         case .disconnect:
-            self.statusLabel.text = "Start"
+            self.statusLabel.text = L10n.Vpn.start
         case .fail:
-            self.statusLabel.text = "Start"
+            self.statusLabel.text = L10n.Vpn.start
         }
     }
     

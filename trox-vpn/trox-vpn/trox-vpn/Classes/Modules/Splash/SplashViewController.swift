@@ -50,7 +50,7 @@ class SplashViewController: UIViewController {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.textColor = .white
-        label.text = "FAST, UNLIMITED & SAFE"
+        label.text = L10n.Splash.description
         self.view.addSubview(label)
         label.snp.makeConstraints { make in
             make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).inset(10)

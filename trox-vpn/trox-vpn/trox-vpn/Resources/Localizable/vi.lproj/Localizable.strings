@@ -1,0 +1,64 @@
+"Error" = "Lỗi";
+"Agree" = "Đồng ý";
+
+"Splash.Description" = "NHANH CHÓNG, KHÔNG GIỚI HẠN & AN TOÀN";
+
+"Onboard.Next" = "Tiếp theo";
+"Onboard.Protect.Title" = "Bảo vệ kết nối của bạn";
+"Onboard.Protect.Description" = "Nhấn để kích hoạt VPN và bảo vệ dữ liệu của bạn ngay lập tức chỉ với một bước đơn giản";
+
+"Onboard.Location.Title" = "Chọn vị trí của bạn";
+"Onboard.Location.Description" = "Chọn một quốc gia để kết nối với VPN và bắt đầu thưởng thức phát trực tuyến an toàn";
+
+"Onboard.IP.Title" = "Kiểm tra dữ liệu IP của bạn";
+"Onboard.IP.Description" = "Xem chi tiết IP và đảm bảo kết nối an toàn trong một thao tác đơn giản";
+
+"CheckNetwork.Download" = "Tải xuống";
+"CheckNetwork.Upload" = "Tải lên";
+
+"Data.CheckIPData" = "Kiểm tra dữ liệu IP";
+"Data.IPData" = "Dữ liệu IP";
+"Data.IPAddress" = "Địa chỉ IP";
+"Data.Location" = "Vị trí";
+"Data.PostalCode" = "Mã bưu điện";
+"Data.CountryCode" = "Mã quốc gia";
+
+"Settings" = "Cài đặt";
+"Settings.PrivacyPolicy" = "Chính sách quyền riêng tư";
+"Settings.ManageSubscription" = "Quản lý đăng ký";
+"Settings.RestorePurchases" = "Khôi phục mua hàng";
+"Settings.HelpSupport" = "Hỗ trợ & Trợ giúp";
+"Settings.TermsOfService" = "Điều khoản dịch vụ";
+"Settings.RestoreSuccessfull" = "Khôi phục thành công";
+
+"VPN.Time" = "Thời gian";
+"VPN.Locations" = "Vị trí";
+"VPN.Status" = "Trạng thái";
+"VPN.MBS" = " MB/S";
+"VPN.Stop" = "Dừng";
+"VPN.Close" = "Đóng";
+"VPN.Start" = "Bắt đầu";
+"VPN.Connected" = "Đã kết nối";
+"VPN.Connecting" = "Đang kết nối...";
+"VPN.NotConnected" = "Chưa kết nối";
+"VPN.Fail" = "Thất bại";
+
+"PrivacyPolicy" = "
+    Chính sách quyền riêng tư
+
+    Thông tin chúng tôi thu thập và sử dụng
+    Khi bạn tương tác với ứng dụng của chúng tôi, các thực hành dữ liệu sau được áp dụng: • Dịch vụ của chúng tôi không lưu trữ hoặc theo dõi dữ liệu người dùng. Chúng tôi cung cấp các tính năng mã hóa lưu lượng truy cập mà không lưu giữ bất kỳ thông tin cá nhân nào. Không có nhật ký hoạt động nào của người dùng được lưu giữ. • Chúng tôi không thu thập các chi tiết bạn có thể cung cấp trực tiếp như tên, địa chỉ email hoặc số liên lạc. Email chỉ được sử dụng để trả lời các câu hỏi gửi qua các kênh chính thức của chúng tôi và không thể nhận diện người dùng cá nhân. • Dữ liệu tổng hợp, chẳng hạn như tổng lưu lượng truy cập của tất cả người dùng tại một quốc gia cụ thể, được ghi lại để cải thiện chất lượng dịch vụ. Thông tin này là tổng quát và không liên kết với người dùng cá nhân. • Chúng tôi không thu thập dữ liệu cụ thể của thiết bị như địa chỉ IP, mẫu thiết bị, hệ điều hành hoặc dấu thời gian. Lịch sử duyệt web, nội dung lưu lượng truy cập và truy vấn DNS cũng không được theo dõi. • Các dịch vụ bên thứ ba được tích hợp trong ứng dụng của chúng tôi có thể thu thập dữ liệu cho mục đích của riêng họ. Chính sách quyền riêng tư của các dịch vụ này có thể được tìm thấy tại: Google Analytics for Firebase (https://firebase.google.com/policies/analytics), Appsflyer (https://www.appsflyer.com/legal/privacy-policy/).
+
+    Liên kết đến các trang web bên ngoài
+    Dịch vụ của chúng tôi có thể chứa liên kết đến các trang web của bên thứ ba. Khi bạn nhấp vào các liên kết này, bạn sẽ rời khỏi nền tảng của chúng tôi. Vui lòng xem lại chính sách quyền riêng tư của các trang web bên ngoài này vì chúng tôi không chịu trách nhiệm về nội dung, thực hành dữ liệu hoặc chính sách của họ.
+
+    Quyền riêng tư của trẻ em
+    Dịch vụ của chúng tôi không dành cho cá nhân dưới 13 tuổi. Chúng tôi không cố ý thu thập dữ liệu cá nhân từ trẻ em. Nếu phát hiện dữ liệu như vậy đã được cung cấp, chúng tôi sẽ xóa ngay lập tức. Phụ huynh hoặc người giám hộ biết con mình đã chia sẻ thông tin cá nhân nên liên hệ với chúng tôi ngay lập tức.
+
+    Thay đổi chính sách quyền riêng tư này
+    Chúng tôi có thể cập nhật chính sách quyền riêng tư này định kỳ. Người dùng được khuyến khích xem lại trang này thường xuyên để cập nhật các thay đổi. Thông báo về các bản cập nhật sẽ được đăng tại đây.
+
+    Liên hệ với chúng tôi:
+    Nếu bạn có bất kỳ câu hỏi nào về thực hành quyền riêng tư của chúng tôi hoặc bất kỳ khía cạnh nào về dịch vụ của chúng tôi, vui lòng liên hệ với chúng tôi qua email: samtandyrspzoo@proton.me
+";
+
